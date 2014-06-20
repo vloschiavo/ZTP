@@ -1,0 +1,13 @@
+---
+hostnames: {
+  ex4200-01: {
+    ip_prefix: 1.1.1.2/24,
+    domain_name: mgmt.cbsinteractive.com,
+    mac_address: "aa:aa:aa:ff:ff:ff"
+  },
+  ex4200-34: {
+    ip_prefix: 1.1.1.6/24,
+    domain_name: prod.cbsinteractive.com,
+    mac_address: "bb:bb:bb:cc:cc:cd"
+  }
+}

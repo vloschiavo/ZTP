@@ -1,7 +1,15 @@
-ZTP
-===
+Adding a New Routing Device to Your Network
+===========
 
-Juniper Networks Configuration automation for initial installs to be used in conjunction with ZTP (Zero Touch Provisioning)
+This example is described in detail in the following document:
+http://www.juniper.net/techpubs/en_US/release-independent/nce/information-products/topic-collections/nce/new-rtg-device/adding-a-new-network-device.pdf
 
-Work in progress - 
-Based on https://github.com/jeremyschulman/NCE
+It specifically applies to the section "Configuring New Routing
+Devices with a Single Routing Engine".
+
+Usage
+-----
+
+```sh
+python new_device.py
+```
