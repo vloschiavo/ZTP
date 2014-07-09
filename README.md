@@ -1,4 +1,4 @@
-Adding a New Routing Device to Your Network
+Adding a New Juniper Device to Your Network via ZTP
 ===========
 
 This example is described in detail in the following document:
