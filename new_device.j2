@@ -1,15 +1,15 @@
 {% for hostname in hostnames %}
 system {
-    host-name {{ host_name }};
+    host-name {{ hostname }};
     name-server 8.8.8.8;
-    domain-name {{ hostname.domain_name }};
+    domain-name {{ domain_name }};
     root-authentication {
-        encrypted-password "$1$hKWBk3fb$AzrueuuQZ5/Xaz1fAgDHF/"; ## Secret data
+        encrypted-password "{{ root_encrypted_password }}"; ## Secret data
     }
     login {
         user admin_bob {
             authentication {
-                encrypted-password "$1$hKWBk3fb$AzrueuuQZ5/Xaz1fAgDHF/"; ## Secret data
+                encrypted-password "{{ root_encrypted_password }}"; ## Secret data
             }
             class super-user;
         }
@@ -22,7 +22,7 @@ interfaces {
     me0 {
         unit 0 {
             family inet {
-                address {{ hostname.ip_prefix }};
+                address {{ mgmt_ip }};
 
             }
         }
