@@ -1,0 +1,6 @@
+---
+hostname: ex4200-01
+mgmt_ip: 1.1.1.2/24
+domain_name: mgmt.cbsinteractive.com
+mac_address: "aa:aa:aa:ff:ff:ff"
+root_encrypted_password: "$1$hKWBk3fb$AzrueuuQZ5/Xaz1fAgDHF/"

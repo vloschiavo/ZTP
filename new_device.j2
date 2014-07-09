@@ -1,4 +1,3 @@
-{% for hostname in hostnames %}
 system {
     host-name {{ hostname }};
     name-server 8.8.8.8;
@@ -27,4 +26,4 @@ interfaces {
         }
     }
 }
-{% endfor %}
+
