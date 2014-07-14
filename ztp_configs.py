@@ -10,9 +10,16 @@ for row in device_data:
 	data = row
 	conffilename =  row["hostname"] + ".conf";
 
+# option to use yaml data source
+#		with open(yamlfilename) as fh:
+#		    data = yaml.load(fh.read())
+# end option to use yaml data source
+
+
 	# Read the Junos config Jinja2 template file.
 	with open("junos_conf_template.j2") as t_fh:
 	    t_format = t_fh.read()
+
 	template = Template(t_format)
 
 	# Create the .conf file

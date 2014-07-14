@@ -23,5 +23,5 @@ Usage
 -----
 
 ```sh
-python new_device.py
+python ztp_configs.py
 ```

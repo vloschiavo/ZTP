@@ -1,0 +1,15 @@
+
+# Host {{ hostname }} added by ztp script
+host {{ hostname }} {
+	hardware ethernet {{ mac_address }};
+	fixed-address {{ mgmt_ip }};
+	option tftp-server-name "10.100.5.1";
+	option host-name "{{ hostname }}";
+	option log-servers "{{ syslog_server }}";
+	option ntp-servers "{{ ntp_server }}";
+	option NEW_OP.image-file-name "{{ junos_image }}";
+	option NEW_OP.transfer-mode "http";
+	option NEW_OP.config-file-name "{{ hostname }}.conf";
+}
+# End {{ hostname }} section
+
