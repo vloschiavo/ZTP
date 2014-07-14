@@ -5,7 +5,15 @@ This example is described in detail in the following document:
 http://www.juniper.net/techpubs/en_US/release-independent/nce/information-products/topic-collections/nce/new-rtg-device/adding-a-new-network-device.pdf
 
 It specifically applies to the section "Configuring New Routing
-Devices with a Single Routing Engine".
+Devices".
+
+Based on Jeremy Schulman's work:
+https://github.com/jeremyschulman/NCE
+
+This is an extension to Juniper's basic ZTP. 
+http://www.juniper.net/techpubs/en_US/junos13.3/topics/task/configuration/software-image-and-configuration-automatic-provisioning-confguring.html
+
+Native ZTP allows you to apply a configuration to a new amnesiac device.  This extension creates ISC dhcpd.conf configurations as well as the JunOS configurations for an "unlimited" number of devices.
 
 Usage
 -----
