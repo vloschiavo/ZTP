@@ -1,5 +1,7 @@
 1) dynamic part: ZTP
--Collect Data into a csv spreadsheet 
+-Collect Data into a csv/excel spreadsheet 
+(excel will require import xlrd (sudo pip install xlrd)
+(csv will require import csv)
 	a) os image
 	b) base config per switch
 		i) hostname

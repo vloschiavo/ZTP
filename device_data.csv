@@ -1,0 +1,4 @@
+Host Name,Mgmt IP,MAC Address,Serial Number,Domain name,Encrypted Root Password
+ex4200-01,1.1.1.1/24,aa:aa:aa:ff:ff:ff,1245TGH6541,mgmt.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2
+Ex4200-02,1.1.1.2/24,bb:bb:bb:ee:ee:ee,1245TGH6552,dev.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2
+Ex4200-03,1.1.1.3/24,cc:cc:cc:dd:dd:dd,1245TGH6563,Prod.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2

@@ -1,9 +1,20 @@
+import csv
+
+# possibly use xls(x)?  would require additional module (sudo pip install xlrd)
+#import xlrd
+
 import yaml
 import sys
 from glob import glob
 from jinja2 import Template
 
-# Number of yaml files
+with open('device_data.csv') as csvfile:
+	device_data = csv.reader(csvfile, delimiter=',', quotechar='"')
+	for row in device_data:
+		print ', '.join(row)
+
+
+# Number of rows in CSV file
 y = 2
 
 # YAML file.
