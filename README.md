@@ -15,6 +15,10 @@ http://www.juniper.net/techpubs/en_US/junos13.3/topics/task/configuration/softwa
 
 Native ZTP allows you to apply a configuration to a new amnesiac device.  This extension creates ISC dhcpd.conf configurations as well as the JunOS configurations for an "unlimited" number of devices.
 
+The script looks for a csv file named 'device_data.csv' with the headers as follows:
+hostname,mgmt_ip,mac_address,serial_number,domain_name,root_encrypted_password
+
+
 Usage
 -----
 
