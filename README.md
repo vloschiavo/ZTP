@@ -1,6 +1,4 @@
-ZTPag
-===========
-Zero Touch Provisioning Auto-config Generator
+ZTPag: Zero Touch Provisioning Auto-config Generator
 ===========
 
 Why does this exist? - This addresses some of the manual configuration generation holes not filled by native ZTP on JunOS devices. 
@@ -48,7 +46,7 @@ Native ZTP allows you to apply a configuration to a new amnesiac device.  This e
 
 Hackers:
 -----
-Feel free to modify for your purposes.  They python will use your csv headers as variables to be replaced in the Jinja2 template; adding a variable is as simple as adding a column (and header) in the csv and referencing the header in your jinja template.  
+Feel free to modify for your purposes.  The python script will use your csv headers as variables to be replaced in the Jinja2 template; adding a variable is as simple as adding a column (and header) in the csv and referencing the header in your jinja template.  
 
 Example: 
 1) Add a column to the csv called: bgp_peer
