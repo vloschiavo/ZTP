@@ -63,6 +63,7 @@ It specifically applies to the section "Configuring New Routing
 Devices".
 
 Thank you Jeremy Schulman for the inspiration.  See his work here: https://github.com/jeremyschulman/NCE
+Thanks to Sachin for your help working through the flow.
 
 This is an extension to Juniper's basic ZTP. 
 http://www.juniper.net/techpubs/en_US/junos13.3/topics/task/configuration/software-image-and-configuration-automatic-provisioning-confguring.html
