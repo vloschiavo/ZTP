@@ -5,6 +5,10 @@ import csv
 import sys
 from jinja2 import Template
 
+
+##################################################
+# Begin: User defined variables
+##################################################
 # For these two variables below to work you'll need to run the script as the appropriate user / credentials.  sudo should work fine.  If the script boms, check your paths and permissions.
 
 # Set this variable to your dhcpd.conf path. In the example below, the system dhcpd.conf would appended with the specific host reservations.  You may want to backup your original first.  :)
@@ -15,9 +19,20 @@ dhcpd_file="dhcpd.conf"
 # e.g.  conf_path="/var/www/config/"
 conf_path=""
 
+# File name of your csv file
+csv_filename="device_data.csv"
+
+# Command to restart your DHCP daemon - unremark the next line 
+dhcpd_restart_command="sudo /etc/init.d/isc-dhcp-server restart"
+
+##################################################
+# End: User defined variables
+# Beyond here be dragons
+##################################################
+
 # Read device_data.csv from the current directory
 # csv.DictReader reads the first row as a header row and stores the column headings as keys
-device_data = csv.DictReader(open("device_data.csv"))
+device_data = csv.DictReader(open(csv_filename))
 
 # Loops through the device_data csv so we can perform actions for each row
 for row in device_data:
@@ -61,5 +76,9 @@ for row in device_data:
 	# Append our host definition to the dhcpd.conf
 	with open(dhcpd_file, "a") as dhcpdconf:
 		dhcpdconf.write(template2.render(data))
+
+	# Restart dhcpd
+	from subprocess import call
+	dhcpd_return_code = call(dhcpd_restart_command, shell=True)
 
 print "Good bye!"

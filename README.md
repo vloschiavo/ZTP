@@ -34,7 +34,7 @@ Bar code mac is:  aa:11:22:33:44:00
 
 2) Fill in the other fields in the device_data.csv.
 
-3) Edit the paths at the beginning of the python script.  One for the dhcpd file, and one for the config file path.
+3) Edit the necessary variables at the beginning of the python script.
 
  a) If you put the path to your server's real dhcpd.conf (On Debian, and Debain based distributions, this is located at: /etc/dhcp/dhcpd.conf) and the script will append the host reservations.  You will just need to restart your dhcp daemon.
  b) Setting the config file path to the web server [document-root]/config/ will also save you the hassle of moving files later.
