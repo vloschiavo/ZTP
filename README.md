@@ -27,9 +27,9 @@ Bar code mac is:  aa:11:22:33:44:00
 
 3) Edit the paths at the beginning of the python script.  One for the dhcpd file, and one for the config file path.
 
-	a) If you put the path to your server's real dhcpd.conf (On Debian, and Debain based distributions, this is located at: /etc/dhcp/dhcpd.conf) and the script will append the host reservations.  You will just need to restart your dhcp daemon.
-	b) Setting the config file path to the web server [document-root]/config/ will also save you the hassle of moving files later.
-	c) just remember to run the script with sudo.
+ a) If you put the path to your server's real dhcpd.conf (On Debian, and Debain based distributions, this is located at: /etc/dhcp/dhcpd.conf) and the script will append the host reservations.  You will just need to restart your dhcp daemon.
+ b) Setting the config file path to the web server [document-root]/config/ will also save you the hassle of moving files later.
+ c) just remember to run the script with sudo.
 
 4) You will also notice that any options you specify in DHCP will be committed to the configuration, like: Hostname, IP address, DNS Server, NTP, Syslog, etc.  These can be overridden later by your jinja template configuration file.  The default example in this script append a "-dhcp" to the hostname reservation and change the host name again in the configuration file.  This way you can easily tell what stage a switch is in during the upgrade process for troubleshooting purposes.
 
