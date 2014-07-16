@@ -4,12 +4,12 @@ host {{ hostname }} {
 	hardware ethernet {{ mac_address }};
 	fixed-address {{ mgmt_ip }};
 	option tftp-server-name "10.5.5.1";
-	option host-name "{{ hostname }}";
+	option host-name "{{ hostname }}-dhcp";
 	option log-servers {{ syslog_server }};
 	option ntp-servers {{ ntp_server }};
 	option NEW_OP.image-file-name "{{ junos_image }}";
 	option NEW_OP.transfer-mode "http";
-	option NEW_OP.config-file-name "/config/{{ hostname }}.conf";
+	option NEW_OP.config-file-name "config/{{ hostname }}.conf";
 }
 # End {{ hostname }} section
 
