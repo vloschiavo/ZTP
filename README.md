@@ -7,6 +7,15 @@ ZTP - Boots a fresh (new, out of the box) device, updates JunOS code, adds a con
 
 ZTPag - is a python script that generates configurations and static dhcpd reservations for each device. 
 
+What does it do:
+-----
+
+1) Auto generation of static dhcp reservations (as an alternative to the randomized/pool model).
+
+2) Customized JunOS configuration per switch (versus traditional ZTP sending a single static configuration for all junos devices).
+
+3) specific JunOS operating system per switch. - Main benefit here is if you have several device models that require different JunOS images or versions.
+
 Work Flow
 -----
 
