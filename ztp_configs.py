@@ -77,8 +77,8 @@ for row in device_data:
 	with open(dhcpd_file, "a") as dhcpdconf:
 		dhcpdconf.write(template2.render(data))
 
-	# Restart dhcpd
-	from subprocess import call
-	dhcpd_return_code = call(dhcpd_restart_command, shell=True)
+# Restart dhcpd
+from subprocess import call
+dhcpd_return_code = call(dhcpd_restart_command, shell=True)
 
 print "Good bye!"

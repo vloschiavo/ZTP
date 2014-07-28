@@ -1,4 +1,4 @@
-hostname,mgmt_ip,mac_address,serial_number,domain_name,root_encrypted_password,syslog_server,ntp_server,junos_image
-ex4200-01,1.1.1.1/24,aa:aa:aa:ff:ff:ff,1245TGH6541,mgmt.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.1.1.120,50.116.38.157,jinstall-ex-4200-latest.tgz
-ex4200-02,1.1.1.2/24,bb:bb:bb:ee:ee:ee,1245TGH6552,dev.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.30.1.120,50.116.38.157,images/jinstall-ex-4200-12.3R5.7-domestic-signed.tgz
-ex2200-03,1.1.1.3/24,cc:cc:cc:dd:dd:dd,1245TGH6563,Prod.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.1.40.120,50.116.38.157,images/jinstall-ex-2200-13.2X51-D20.2-domestic-signed.tgz
+hostname,mgmt_ip,mac_address,serial_number,rack_location,domain_name,root_encrypted_password,syslog_server,ntp_server,junos_image,userid,password
+ex4200-01,1.1.1.1/24,aa:aa:aa:ff:ff:ff,1245TGH6541,Row 1-Rack 12.U15,mgmt.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.1.1.120,50.116.38.157,jinstall-ex-4200-latest.tgz,ash,asdflkjasd;flkj
+ex4200-02,1.1.1.2/24,bb:bb:bb:ee:ee:ee,1245TGH6552,Row 1-Rack 13.U15,dev.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.30.1.120,50.116.38.157,images/jinstall-ex-4200-12.3R5.7-domestic-signed.tgz,ash,asdflkjasd;flkj
+ex2200-03,1.1.1.3/24,cc:cc:cc:dd:dd:dd,1245TGH6563,Row 1-Rack 14.U15,Prod.mydomain.org,$1$Bk3fb$A4444zrueuuQZ5/Xaz1fAgDHF/2,10.1.40.120,50.116.38.157,images/jinstall-ex-2200-13.2X51-D20.2-domestic-signed.tgz,ash,asdflkjasd;flkj
