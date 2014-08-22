@@ -22,7 +22,7 @@ interfaces {
 	description "{{ rack_location }}";
         unit 0 {
             family inet {
-                address {{ mgmt_ip }};
+                address {{ mgmt_ip }}/{{ cidr_bits }};
             }
         }
     }
